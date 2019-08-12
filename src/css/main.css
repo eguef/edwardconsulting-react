@@ -1,0 +1,10 @@
+@import url('./pages/home-style.css');
+@import url('./components/button-style.css');
+@import url('./components/input-style.css');
+@import url('./components/navbar-style.css');
+
+html, body
+{
+    margin: 0px; padding: 0px;
+    font-family: 'Gothic A1', 'Arial Narrow', Arial, sans-serif;
+}

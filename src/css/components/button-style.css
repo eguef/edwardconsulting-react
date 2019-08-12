@@ -1,0 +1,14 @@
+.button {
+  border-radius: none;
+  border: none;
+  color: white;
+  text-align: center;
+  background-color: #00AAFF;
+  height: 40px;
+  font-size: 0.8em;
+  font-weight: lighter;
+  font-family: 'Gothic A1', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
