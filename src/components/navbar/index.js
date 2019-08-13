@@ -1,7 +1,15 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import Dropdown from '../dropdown';
 
 class NavBar extends Component {
+  constructor() {
+    super();
+    this.itemList = [
+      { name: 'Approach' },
+    ];
+  }
+
   render() {
     return (
       <div className="navbar">
@@ -14,8 +22,8 @@ class NavBar extends Component {
         </div>
         <div className="navbar__links">
           <div />
-          <div className="navbar-about">About</div>
-          <div className="navbar-services">Services</div>
+          <Dropdown name="About" itemList={this.itemList} />
+          <Dropdown name="Services" itemList={this.itemList} />
           <div className="navbar-blog">Blog</div>
           <div className="navbar-gallery">Gallery</div>
           <div className="navbar-partners">Patners</div>

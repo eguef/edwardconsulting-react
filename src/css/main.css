@@ -2,6 +2,10 @@
 @import url('./components/button-style.css');
 @import url('./components/input-style.css');
 @import url('./components/navbar-style.css');
+@import url('./components/dropdown-style.css');
+@import url('./components/blogcard-style.css');
+@import url('./components/impactcard-style.css');
+@import url('./components/footer-style.css');
 
 html, body
 {

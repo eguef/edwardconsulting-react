@@ -4,7 +4,7 @@
   color: #ffffff;
   text-transform: uppercase;
   font-family: 'Gothic A1', 'Arial Narrow', Arial, sans-serif;
-  padding: 0 2%;
+  padding: 0 1%;
   display: grid;
   grid-template-columns: 20% auto;
 }
@@ -52,4 +52,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }

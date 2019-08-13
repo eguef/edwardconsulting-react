@@ -70,5 +70,169 @@
 .home__page {
   display: grid;
   grid-template-rows: auto;
-  grid-gap: 5%;
+  grid-gap: 10vh;
+}
+
+.home__page-approach {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 80vh;
+}
+
+.home__page-approach-image, .home__page-approach-plain {
+  width: 50%;
+  height: 100%;
+}
+
+.home__page-approach-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.home__page-approach-image img {
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.home__page-approach-plain {
+  background-color: #05456A;
+}
+
+.home__page-approach-content {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 60%;
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  justify-items: center;
+  align-items: center;
+  color: #05456A;
+}
+
+.home__page-approach-content-quote {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.home__page-approach-content-quote span {
+  display: block;
+  font-weight: 1000;
+}
+
+.home__page-approach-content-summary {
+  padding: 0 20%;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.home__page-choose-us {
+  height: 50vh;
+  color: #05456A;
+  background: linear-gradient(to right, #ffffff 80%,#EBEFF4 20%);
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20%;
+}
+
+.home__page-choose-us-values {
+  height: inherit;
+  background: linear-gradient(to right, #ffffff 5%,#EBEFF4 95%);
+}
+
+.home__page-choose-us-values img {
+  height: inherit;
+}
+
+.home__page-choose-us-content {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.home__page-choose-us-content-quote span {
+  display: block;
+  font-weight: 900;
+}
+
+.home__page-choose-us-content-quote {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 100;
+  padding: 0 0 0 15%;
+}
+
+.home__page-perspective {
+  height: 70vh;
+  padding: 0 5%;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.home__page-perspective-title, .home__page-impact-title, .home__page-schools-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #DAA520;
+}
+
+.home__page-perspective-cards, .home__page-impact-reviews {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home__page-impact {
+  height: 70vh;
+  padding: 0 5%;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.home__page-schools {
+  height: 20vh;
+  padding: 0 5%;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.home__page-schools-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+}
+
+.home__page-impact-school {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 5%;
+}
+
+.home__page-impact-school img {
+  width: inherit;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }

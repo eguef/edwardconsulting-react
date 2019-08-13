@@ -1,14 +1,25 @@
-.button {
-  border-radius: none;
-  border: none;
-  color: white;
-  text-align: center;
-  background-color: #00AAFF;
+.button, .button__light {
+  border-radius: 0;
   height: 40px;
   font-size: 0.8em;
   font-weight: lighter;
   font-family: 'Gothic A1', 'Arial Narrow', Arial, sans-serif;
   cursor: pointer;
   outline: none;
+  text-align: center;
 }
 
+
+.button {
+  border: none;
+  color: white;
+  background-color: #00AAFF;
+}
+
+.button__light {
+  color: #05456A;
+  background-color: #ffffff;
+  border: 1px solid #05456A;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
