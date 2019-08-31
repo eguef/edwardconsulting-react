@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
 import { Router } from 'react-router';
+import ScrollToTop from 'react-router-scroll-top';
 import store from './store';
 import App from './App';
 import './css/main.css';
@@ -13,7 +14,9 @@ const app = document.getElementById('edward-consulting-app');
 render(
   <Provider store={store}>
     <Router history={history}>
-      <App />
+      <ScrollToTop>
+        <App />
+      </ScrollToTop>
     </Router>
   </Provider>,
   app,

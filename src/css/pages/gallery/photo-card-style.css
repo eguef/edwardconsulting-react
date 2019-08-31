@@ -1,0 +1,29 @@
+.photo-card {
+  border: 2px solid #dadada;
+  height: 320px;
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.photo-card img {
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.photo-card-summary {
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 90%;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

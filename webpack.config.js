@@ -3,6 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true,
+  },
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
