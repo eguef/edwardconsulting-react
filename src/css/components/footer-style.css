@@ -1,16 +1,23 @@
 .footer {
   height: 30vh;
-  background-color: #05456A;
+  background-color: #05456a;
   display: grid;
-  padding: 5%;
+  padding: 3%;
   grid-template-rows: 1fr 1fr 2fr;
   grid-gap: 3%;
+  color: #ffffff;
 }
 
 .footer-text {
   text-transform: uppercase;
   font-size: 2em;
-  color: #ffffff;
+}
+
+.footer-others {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-logo {
@@ -30,10 +37,79 @@
 }
 
 .footer-logo-name-main {
-
+  font-size: 2em;
+  font-weight: 500;
 }
 
 .footer-logo-name-sub {
-  
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
+.footer-social {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-contact-us {
+  text-transform: uppercase;
+  padding: 0 10px 5px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.footer-form {
+  margin-left: 1%;
+  align-self: center;
+  display: flex;
+}
+
+.footer-form-input {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  -moz-transform: skewX(20deg);
+  -webkit-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg);
+}
+
+.footer-input, .footer-button {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1em;
+  -moz-transform: skewX(-20deg);
+   -webkit-transform: skewX(-20deg);
+   -o-transform: skewX(-20deg);
+   -ms-transform: skewX(-20deg);
+   transform: skewX(-20deg);
+}
+
+@-webkit-keyframes autofill {
+  to {
+      color: #ffffff;
+      background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+.footer-button {
+  height: 52px;
+  padding: 0;
+  padding: 0 1em; 
+}
+
+.footer-input {
+  padding-left: 20px;
+  width: 200px;
+  height: 50px;
+}
