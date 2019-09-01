@@ -1,0 +1,14 @@
+.blog {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 10vh;
+  align-content: space-between;
+}
+
+.blog-list {
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}

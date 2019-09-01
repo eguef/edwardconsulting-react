@@ -1,9 +1,11 @@
 @import url('./pages/home/home-style.css');
 @import url('./pages/gallery/gallery-style.css');
 @import url('./pages/gallery/photo-card-style.css');
+@import url('./pages/blog/blog-style.css');
 @import url('./components/button-style.css');
 @import url('./components/input-style.css');
 @import url('./components/navbar-style.css');
+@import url('./components/nav-extension-style.css');
 @import url('./components/dropdown-style.css');
 @import url('./components/blogcard-style.css');
 @import url('./components/impactcard-style.css');

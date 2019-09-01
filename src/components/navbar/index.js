@@ -30,7 +30,7 @@ class NavBar extends Component {
           <div />
           <Dropdown name="About" itemList={this.itemList} />
           <Dropdown name="Services" itemList={this.itemList} />
-          <div className="navbar-blog navbar__link">Blog</div>
+          <div className="navbar-blog navbar__link"><Link to="/blog">Blog</Link></div>
           <div className="navbar-gallery navbar__link">
             <Link to="/gallery">Gallery</Link>
           </div>
