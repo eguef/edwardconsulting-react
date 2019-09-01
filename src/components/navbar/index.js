@@ -1,17 +1,19 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Dropdown from '../dropdown';
 
 class NavBar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.itemList = [{ name: 'Approach' }];
   }
 
   render() {
+    const { className } = this.props;
     return (
-      <div className="navbar">
+      <div className={className ? `navbar ${className}` : 'navbar navbar__coloured'}>
         <div className="navbar__link">
           <Link to="/">
             <div className="navbar__logo">
@@ -44,5 +46,10 @@ class NavBar extends Component {
     );
   }
 }
+
+NavBar.propTypes = {
+  className: PropTypes.string,
+}
+
 
 export default NavBar;

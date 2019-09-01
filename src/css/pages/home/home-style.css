@@ -71,7 +71,6 @@
   display: grid;
   grid-template-rows: auto;
   grid-gap: 10vh;
-  background: linear-gradient(to left, #EBEFF4 60%, #ffffff 40%);
 }
 
 .home__page-approach {

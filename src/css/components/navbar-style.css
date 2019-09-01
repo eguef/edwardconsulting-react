@@ -1,13 +1,31 @@
 .navbar {
   height: 60px;
-  background: linear-gradient(to right,#1E212E 20%,#05456A);
-  color: #ffffff;
   text-transform: uppercase;
   font-family: 'Gothic A1', 'Arial Narrow', Arial, sans-serif;
   padding: 0 1%;
   display: grid;
   grid-template-columns: 20% auto;
 }
+
+.navbar__coloured {
+  background: linear-gradient(to right,#1E212E 20%,#05456A);
+  color: #ffffff;
+}
+
+.navbar__transparent-white {
+  background: transparent;
+  color: #ffffff;
+  position: absolute;
+  top:0;
+  width: 98%;
+  z-index: 1000;
+}
+
+.navbar__transparent-black {
+  background: transparent;
+  color: #000;
+}
+
 
 .navbar__link {
   height: inherit;
