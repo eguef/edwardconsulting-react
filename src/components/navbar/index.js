@@ -7,7 +7,7 @@ import Dropdown from '../dropdown';
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.itemList = [{ name: 'Approach' }];
+    this.itemList = [{ name: 'Our Story', path: '/our-story' }];
   }
 
   render() {

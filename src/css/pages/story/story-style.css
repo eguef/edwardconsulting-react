@@ -1,0 +1,95 @@
+.story {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 10vh;
+  align-content: space-between;
+  position: relative;
+}
+
+.story__landing {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+
+.story__landing-left {
+  background: #05456a;
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+  grid-gap: 20px;
+  padding: 20%;
+}
+
+.story__landing-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.story__landing-right img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.story-title,
+.story-why {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.story-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.story-why {
+  font-size: 2em;
+}
+
+.story-summary {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.story-content {
+  padding: 0 10%;
+  text-align: justify;
+}
+
+.story-content, .story-content-two {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.story-content-one {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.story-content-two {
+  font-size: 1.2em;
+}
+
+.story-content-two span {
+  display: block;
+}
+
+.story-content-failed {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.story-down-icon {
+  position: absolute;
+  bottom: 0;
+  right: 48.35%;
+  font-size: 3em;
+  color: #ffffff;
+}

@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
+import { withRouter } from "react-router-dom";
 
 class Dropdown extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class Dropdown extends Component {
   }
 
   render() {
+    const { history, itemList, name } = this.props;
     return (
       <div className="dropdown">
         <div
@@ -45,16 +47,19 @@ class Dropdown extends Component {
           onClick={this.mouseOver}
           onMouseLeave={this.mouseLeave}
         >
-          {this.props.name}
+          {name}
         </div>
         <div ref={this.dropdown} className="dropdown-content">
-          {this.props.itemList.map(item => (
+          {itemList.map(item => (
             <div
               key={item.name}
               onMouseOver={this.mouseOver}
               onFocus={this.mouseOver}
               onMouseLeave={this.mouseLeave}
               className="dropdown-content-item"
+              onClick={() => {
+                history.push(item.path);
+              }}
             >
               {item.name}
             </div>
@@ -70,4 +75,4 @@ Dropdown.propTypes = {
   itemList: Proptypes.arrayOf(Proptypes.object).isRequired,
 };
 
-export default Dropdown;
+export default withRouter(Dropdown);
