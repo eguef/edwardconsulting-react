@@ -40,7 +40,7 @@ class NavBar extends Component {
           <div className="navbar-contact navbar__link">Contact us</div>
           <span className="navbar-line" />
           <div className="navbar-advice navbar__link">Free advice</div>
-          <div className="navbar-consultation">Free consultation</div>
+          <div className="navbar-consultation navbar__link"><Link to="/consultation">Free consultation</Link></div>
         </div>
       </div>
     );
