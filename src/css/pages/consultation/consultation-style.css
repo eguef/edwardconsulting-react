@@ -1,0 +1,74 @@
+.consultation {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.consultation-page-image {
+  position: relative;
+  width: 44%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.consultation-page-image img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.consultation-page-form {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-gap: 4%;
+  width: 46%;
+  height: 100%;
+  padding: 0 5%
+}
+
+.consultation-page-form-title {
+  align-self: end;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.consultation-form-main-title {
+  color: #075d8f;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.consultation-form-quote {
+  color: #075d8f;
+  font-size: 1em;
+}
+
+.consultation-form-area {
+  display: flex;
+  flex-direction: column;
+  height: 96%;
+  overflow: scroll;
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+.consultation-form-area-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  grid-gap: 20px;
+  padding: 1% 0;
+  margin-bottom: 15px;
+}
+
+.consultation-form-area-two {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 1% 0;
+  margin-bottom: 15px;
+}

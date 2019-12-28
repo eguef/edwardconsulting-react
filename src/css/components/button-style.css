@@ -23,3 +23,10 @@
   text-transform: uppercase;
   padding: 0 10px;
 }
+
+.consultation-button {
+  align-self: start;
+  width: 150px;
+  border-radius: 5px;
+  min-height: 40px;
+}

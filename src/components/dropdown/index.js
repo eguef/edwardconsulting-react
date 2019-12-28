@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
-import { withRouter } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 
 class Dropdown extends Component {
   constructor(props) {
@@ -37,11 +37,13 @@ class Dropdown extends Component {
   }
 
   render() {
-    const { history, itemList, name } = this.props;
+    const {
+      history, itemList, name, black,
+    } = this.props;
     return (
       <div className="dropdown">
         <div
-          className="dropdown-btn"
+          className={black ? 'black dropdown-btn' : 'dropdown-btn'}
           onMouseOver={this.mouseOver}
           onFocus={this.mouseOver}
           onClick={this.mouseOver}
@@ -73,6 +75,8 @@ class Dropdown extends Component {
 Dropdown.propTypes = {
   name: Proptypes.string.isRequired,
   itemList: Proptypes.arrayOf(Proptypes.object).isRequired,
+  // eslint-disable-next-line react/require-default-props
+  black: Proptypes.bool,
 };
 
 export default withRouter(Dropdown);

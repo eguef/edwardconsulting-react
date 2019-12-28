@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const button = (props) => {
-  const { name, className } = props;
+  const { name, className, onSave } = props;
   return (
-    <button type="button" className={className}>
+    <button type="button" className={className} onClick={onSave}>
       {name}
     </button>
   );
@@ -13,6 +13,8 @@ const button = (props) => {
 button.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/require-default-props
+  onSave: PropTypes.func,
 };
 
 export default button;

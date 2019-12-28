@@ -12,9 +12,15 @@
 @import url('./components/blogcard-style.css');
 @import url('./components/impactcard-style.css');
 @import url('./components/footer-style.css');
+@import url('./pages/consultation/consultation-style.css');
 
 html, body
 {
     margin: 0px; padding: 0px;
+    width: 100%; height: 100%;
     font-family: 'Gothic A1', 'Arial Narrow', Arial, sans-serif;
+}
+
+#edward-consulting-app {
+    width: 100%; height: 100%;
 }
