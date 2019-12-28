@@ -26,13 +26,15 @@ const NavExtension = ({
         <button type="button">Subscribe</button>
       </div>
     </div>
-    <div className="nav-extension-tabs">
-      {links.map(link => (
-        <div key={link.name} className="nav-extension-tab" onClick={onClick}>
-          {link.name}
-        </div>
-      ))}
-    </div>
+    { links && (
+      <div className="nav-extension-tabs">
+        {links.map(link => (
+          <div key={link.name} className="nav-extension-tab" onClick={onClick}>
+            {link.name}
+          </div>
+        ))}
+      </div>
+    )}
   </div>
 );
 
