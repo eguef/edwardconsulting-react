@@ -1,4 +1,3 @@
-import axios from 'axios';
 import $ from 'jquery';
 import {
   SAVE_CONSULTATION_SUCCESS,
