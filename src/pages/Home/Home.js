@@ -16,12 +16,12 @@ class Home extends Component {
       lastName: '',
       email: '',
       person: [{
-        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/blank+image.png',
+        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/Odinaka_Chukwu.JPG',
         name: 'Odinaka Chukwu',
         school: 'University of Pennsylvania',
       },
       {
-        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/blank+image.png',
+        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/Yewande_Olusanya_3.jpeg',
         name: 'Yewande Olusanya',
         school: 'University of Illinois',
       },
@@ -56,7 +56,9 @@ class Home extends Component {
   }
 
   render() {
-    const { firstName, lastName, email, person } = this.state;
+    const {
+      firstName, lastName, email, person,
+    } = this.state;
     return (
       <div className="home">
         <div className="home__landing">
