@@ -29,9 +29,9 @@ const Footer = () => (
       </div>
       <div className="footer-social">
         <div className="footer-contact-us">Contact us</div>
-        <i className="fab fa-facebook-square" />
-        <i className="fab fa-instagram" />
-        <i className="fab fa-twitter" />
+        <a href="https://facebook.com/Edward_Consulting-473130736425039" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-square" /></a>
+        <a href="https://www.instagram.com/edward_consulting" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /></a>
+        <a href="https://twitter.com/edwardconsultin" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter" /></a>
         <i className="fa fa-envelope" />
       </div>
     </div>

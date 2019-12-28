@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import Button from '../../components/button';
 import Input from '../../components/input';
@@ -7,26 +8,50 @@ import ImpactCard from '../../components/impactcard';
 import Footer from '../../components/footer';
 
 class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       firstName: '',
       email: '',
-      person: {
-        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg',
-        name: 'Efe',
-        school: 'new york university',
+      person: [{
+        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/blank+image.png',
+        name: 'Odinaka Chukwu',
+        school: 'University of Pennsylvania',
       },
+      {
+        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/blank+image.png',
+        name: 'Yewande Olusanya',
+        school: 'University of Illinois',
+      },
+      {
+        image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/blank+image.png',
+        name: 'Peter Adeyeye',
+        school: 'Duke University',
+      }],
     };
 
     this.onChange = this.onChange.bind(this);
+    this.onClickConsultation = this.onClickConsultation.bind(this);
+    this.onClickApproach = this.onClickApproach.bind(this);
   }
 
   onChange(e) {
     e.preventDefault();
     const { name, value } = e.target;
     this.setState({ [name]: value });
+  }
+
+  onClickConsultation(e) {
+    e.preventDefault();
+    // eslint-disable-next-line react/prop-types
+    this.props.history.push('/consultation');
+  }
+
+  onClickApproach(e) {
+    e.preventDefault();
+    // eslint-disable-next-line react/prop-types
+    this.props.history.push('/our-approach');
   }
 
   render() {
@@ -88,7 +113,7 @@ class Home extends Component {
                 education by connecting people to the best universities and
                 scholarships in the world!
               </div>
-              <Button name="our approach" className="button__light" />
+              <Button name="our approach" className="button__light" onClick={this.onClickApproach} />
               <div />
             </div>
           </div>
@@ -102,6 +127,7 @@ class Home extends Component {
               <Button
                 name="Help Me Get Into My Dream School!"
                 className="button__light"
+                onClick={this.onClickConsultation}
               />
               <div />
             </div>
@@ -148,9 +174,9 @@ class Home extends Component {
               Impact stories from our clients
             </div>
             <div className="home__page-impact-reviews">
-              <ImpactCard person={person} review="Working with Bimpe (Edward consulting expert) was easy and fast. I was guided through the whole process and it was a breeze.  received offers from all the universities I applied to including University of Kent, the University of Sheffield and the University of Bristol. I'm being considered for scholarships to all." />
-              <ImpactCard person={person} review="Working with Bimpe (Edward consulting expert) was easy and fast. I was guided through the whole process and it was a breeze.  received offers from all the universities I applied to including University of Kent, the University of Sheffield and the University of Bristol. I'm being considered for scholarships to all." />
-              <ImpactCard person={person} review="Working with Bimpe (Edward consulting expert) was easy and fast. I was guided through the whole process and it was a breeze.  received offers from all the universities I applied to including University of Kent, the University of Sheffield and the University of Bristol. I'm being considered for scholarships to all." />
+              <ImpactCard person={person[0]} review="With a fully-funded scholarship from Penn UNESCO and a fellowship award from P.E.O Peace International, I am well on my way to begin my graduate studies at an Ivy League University; the University of Pennsylvania. Thanks to Edward Consulting for making my education dream come true!" />
+              <ImpactCard person={person[1]} review="When I finally began my MBA program at the University of Illinois at Urbana-Champaign, Bimpe from Edward consulting was a constant resource when I needed advice about certain situations. I graduated with a job offer at Microsoft and I would love to say that my success story will not be complete without mentioning Bimpe and her influence." />
+              <ImpactCard person={person[2]} review="I am so thankful to Edward consulting and cannot stop recommending them to anyone who wants to travel abroad for their studies. I got accepted to Duke University and a fully-funded scholarship that provides funding for tuition, room, and board, travel to and from Home Country, internship, experiences, conferences, and research" />
             </div>
             <Button name="Read More" className="button__light" />
           </div>

@@ -383,7 +383,7 @@ class Consultation extends Component {
             <Button
               name="Submit"
               className="consultation-button button"
-              onSave={this.saveConsultationForm}
+              onClick={this.saveConsultationForm}
             />
           </div>
         </div>

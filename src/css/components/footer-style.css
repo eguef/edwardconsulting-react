@@ -53,6 +53,12 @@
   justify-content: space-evenly;
 }
 
+.footer-social a {
+  text-decoration: none;
+  opacity: 0.52;
+  color: #ffffff;
+}
+
 .footer-contact-us {
   text-transform: uppercase;
   padding: 0 10px 5px 0;
