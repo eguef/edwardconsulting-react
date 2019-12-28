@@ -12,6 +12,11 @@ import '@babel/polyfill';
 const history = createBrowserHistory();
 const app = document.getElementById('edward-consulting-app');
 
+const path = (/#!(\/.*)$/.exec(location.hash) || [])[1];
+if (path) {
+  history.replace(path);
+}
+
 render(
   <Provider store={store}>
     <Router history={history}>
