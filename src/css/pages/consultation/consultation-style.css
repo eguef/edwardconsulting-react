@@ -57,6 +57,14 @@
   padding-bottom: 4%;
 }
 
+.consultation-form-submitted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #075d8f;
+}
+
 .consultation-form-area-one {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));

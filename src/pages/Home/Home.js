@@ -13,6 +13,7 @@ class Home extends Component {
 
     this.state = {
       firstName: '',
+      lastName: '',
       email: '',
       person: [{
         image: 'https://edwardconsulting.s3.eu-central-1.amazonaws.com/blank+image.png',
@@ -55,7 +56,7 @@ class Home extends Component {
   }
 
   render() {
-    const { firstName, email, person } = this.state;
+    const { firstName, lastName, email, person } = this.state;
     return (
       <div className="home">
         <div className="home__landing">
@@ -76,6 +77,12 @@ class Home extends Component {
                   onChange={this.onChange}
                 />
                 <Input
+                  placeholder="Last Name"
+                  name="lastName"
+                  value={lastName}
+                  onChange={this.onChange}
+                />
+                <Input
                   placeholder="Your Email"
                   name="email"
                   value={email}
@@ -83,7 +90,7 @@ class Home extends Component {
                 />
               </div>
               <Button
-                name="Help Me Get Into My Dream School!"
+                name="Join our mailing list!"
                 className="button"
               />
             </div>
