@@ -4,6 +4,8 @@
 @import url('./pages/blog/blog-style.css');
 @import url('./pages/blog/single-blog-style.css');
 @import url('./pages/story/story-style.css');
+@import url('./pages/consultation/consultation-style.css');
+@import url('./pages/service/service-style.css');
 @import url('./components/button-style.css');
 @import url('./components/input-style.css');
 @import url('./components/navbar-style.css');
@@ -12,7 +14,7 @@
 @import url('./components/blogcard-style.css');
 @import url('./components/impactcard-style.css');
 @import url('./components/footer-style.css');
-@import url('./pages/consultation/consultation-style.css');
+@import url('./components/service-item-style.css');
 
 html, body
 {
