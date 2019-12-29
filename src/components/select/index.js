@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const SimpleSelect = ({ onChange, value, label, name }) => {
+const SimpleSelect = ({ onChange, value, label, name, options }) => {
   const classes = useStyles();
   const inputLabel = React.useRef(null);
   const [labelWidth, setLabelWidth] = React.useState(0);
@@ -43,9 +43,7 @@ const SimpleSelect = ({ onChange, value, label, name }) => {
         <MenuItem value="">
           <em>None</em>
         </MenuItem>
-        <MenuItem value={10}>Bachelors</MenuItem>
-        <MenuItem value={20}>MBA</MenuItem>
-        <MenuItem value={20}>Masters</MenuItem>
+        { options.map(option => (<MenuItem value={option.value}>{option.name}</MenuItem>)) }
         <MenuItem value="other">Other</MenuItem>
       </Select>
     </FormControl>

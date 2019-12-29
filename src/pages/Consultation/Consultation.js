@@ -77,6 +77,24 @@ class Consultation extends Component {
       referral: '',
     };
 
+    this.countryOptions = [
+      { value: 'Canada', name: 'Canada' },
+      { value: 'Usa', name: 'USA' },
+      { value: 'UK', name: 'United Kingdom' },
+    ];
+
+    this.degreeOptions = [
+      { value: 'Bachelors', name: 'Bachelors' },
+      { value: 'Masters', name: 'Masters' },
+      { value: 'MBA', name: 'MBA' },
+      { value: 'PHD', name: 'PHD' },
+    ];
+
+    this.testOptions = [
+      { value: 'IELTS', name: 'IELTS' },
+      { value: 'TOEFL', name: 'TOEFL' },
+    ];
+
     this.onChange = this.onChange.bind(this);
     this.defaultDate = this.defaultDate.bind(this);
     this.handleClose = this.handleClose.bind(this);
@@ -92,13 +110,13 @@ class Consultation extends Component {
     }
   }
 
-  handleClose (event, reason) {
+  handleClose(event, reason) {
     if (reason === 'clickaway') {
       return;
     }
 
     this.props.closeSnackBar();
-  };
+  }
 
   saveConsultationForm(e) {
     e.preventDefault();
@@ -167,7 +185,10 @@ class Consultation extends Component {
             </div>
           </div>
           {success ? (
-            <div className="consultation-form-submitted">Your Information has been recieved. Thank for choosing Edward Consulting, We would reach out to you shortly</div>
+            <div className="consultation-form-submitted">
+              Your Information has been recieved. Thank for choosing Edward
+              Consulting, We would reach out to you shortly
+            </div>
           ) : (
             <div className="consultation-form-area">
               <div className="consultation-form-area-one">
@@ -254,6 +275,7 @@ class Consultation extends Component {
                   onChange={this.onChange}
                   label="What degree(s) are you interested in applying for?"
                   value={degree}
+                  options={this.degreeOptions}
                   name="degree"
                 />
                 {degree === 'other' && (
@@ -286,6 +308,7 @@ class Consultation extends Component {
                   onChange={this.onChange}
                   label="What country or countries are you interested in conducting your studies in?"
                   value={countryOfInterest}
+                  options={this.countryOptions}
                   name="countryOfInterest"
                 />
                 {countryOfInterest === 'other' && (
@@ -316,6 +339,7 @@ class Consultation extends Component {
                   onChange={this.onChange}
                   label="Have you taken TOEFL or IELTS?"
                   value={englishTest}
+                  options={this.testOptions}
                   name="englishTest"
                 />
                 <TextField
@@ -438,7 +462,11 @@ class Consultation extends Component {
           ContentProps={{
             'aria-describedby': 'message-id',
           }}
-          message={<span id="message-id">There was an error, Please try again later</span>}
+          message={(
+            <span id="message-id">
+              There was an error, Please try again later
+            </span>
+)}
           action={[
             <IconButton
               key="close"
