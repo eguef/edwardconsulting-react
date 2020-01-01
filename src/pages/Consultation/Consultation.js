@@ -170,7 +170,7 @@ class Consultation extends Component {
         <NavBar className="navbar__transparent-black" black />
         <div className="consultation-page-image">
           <img
-            src="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            src="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Consultation_Page_2.jpeg"
             alt="approach"
           />
         </div>

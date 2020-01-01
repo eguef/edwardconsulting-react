@@ -50,43 +50,43 @@ class Blog extends Component {
         </div>
         <div className="blog-list">
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_3.jpeg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"
           />
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_4.jpeg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"
           />
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_5.jpg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"
           />
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_6.jpg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"
           />
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_7.jpg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"
           />
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_8.jpg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"
           />
           <BlogCard
-            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+            imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Additional_9.jpeg"
             category="scholarships"
             title="How to find the best scholarships for your graduate program"
             summary="Finding the right scholarship for"

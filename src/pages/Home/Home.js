@@ -152,25 +152,25 @@ class Home extends Component {
             <div className="home__page-perspective-title">Our Perspective</div>
             <div className="home__page-perspective-cards">
               <BlogCard
-                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Blog.jpeg"
                 category="scholarships"
                 title="How to find the best scholarships for your graduate program"
                 summary="Finding the right scholarship for"
               />
               <BlogCard
-                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Blog_2.jpeg"
                 category="scholarships"
                 title="How to find the best scholarships for your graduate program"
                 summary="Finding the right scholarship for"
               />
               <BlogCard
-                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Blog_3.jpeg"
                 category="scholarships"
                 title="How to find the best scholarships for your graduate program"
                 summary="Finding the right scholarship for"
               />
               <BlogCard
-                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/pexels-photo-935948+(1).jpeg"
+                imageSrc="https://edwardconsulting.s3.eu-central-1.amazonaws.com/Blog_4.jpeg"
                 category="scholarships"
                 title="How to find the best scholarships for your graduate program"
                 summary="Finding the right scholarship for"
